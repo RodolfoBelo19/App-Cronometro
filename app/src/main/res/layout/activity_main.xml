@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Cronometro"
+        android:layout_marginBottom="5dp"
+        android:textSize="30sp"/>
+
+
+    <Chronometer
+        android:id="@+id/cronometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="40sp"
+        android:layout_below="@id/titulo"
+        />
+
+    <Button
+        android:id="@+id/inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Início"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cronometro"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        />
+
+    <Button
+        android:id="@+id/pausar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pausar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/inicio"
+        android:layout_marginTop="3dp"
+        android:padding="15dp"
+        />
+
+    <Button
+        android:id="@+id/zerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zerar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pausar"
+        android:layout_marginTop="3dp"
+        android:padding="15dp"
+        />
+
+
+</RelativeLayout>
